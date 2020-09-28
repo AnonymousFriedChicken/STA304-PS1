@@ -1,11 +1,9 @@
 ---
 title: "The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level"
-author: "STA304 Student"
+author: "STA304 Student Who May Like Pineapple Pizza"
 date: 2020-09-28T01:10:00-5:00
-output:
-  html_document: default
-  pdf_document: default
-abstract: In this report, we preliminarily investigate whether subsidizing low-income childcare for age 0-5 children can meaningfully improve long-term educational outcomes (as measured by grade 9 graduation rates).
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
 ---
 
 ```{r setup, include=FALSE}
@@ -15,9 +13,14 @@ library(opendatatoronto)
 library(tidyverse)
 ```
 
+# Abstract
+
+In this report, we investigate whether subsidizing low-income childcare for age 0-5 children can meaningfully improve long-term educational outcomes (as measured by grade 9 graduation rates) as measured at a neighborhood-level.
+
+
 # Introduction
 
-A question involving assistive funding for early-aged children is whether subsidized child-care can improve long-term educational outcomes. If there is, then educational decision makers may wish to further fund early-level childcare. If there isn't, then purely educational funding may be better directed towards other facilities and services.
+A question involving assistive funding for early-aged children is whether subsidized child-care can improve long-term educational outcomes. If such a relationship can be found, then educational decision makers may wish to further fund early childcare. If such a relationship doesn't exist, then funding which is purely for educational purposes may be better directed towards other facilities and services.
 
 On a neighborhood-level, we investigate whether there is a is a statistically significant relationship between (1) access to early (age 0-5) child care in low-income households and (2) educational outcomes as measured by grade 9 graduation rate as of the year 2008 in Catholic schools. Based on a regression and hypothesis across this data, we discovered that there is not sufficient evidence across these a statistically significant relationship between the two factors at a neighborhood level.
 
@@ -26,9 +29,11 @@ While we find reasonably conclusive results at a neighborhood-level for this rep
 
 # Data
 
+This analysis is split into three parts: a review of the Toronto Wellness Education Dataset, a review of the Toronto Wellness Economic Dataset, and an analysis of the relationship between the two.
+
 ## Toronto Education Dataset
 
-Let us first inspect the Toronto Youth Education dataset.
+Let us first inspect the Toronto Wellness Education dataset.
 
 ```{r edu_data}
 package <- show_package("e6639dca-5caf-4ceb-87c5-2e75f1a09f8e")
