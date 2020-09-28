@@ -7,7 +7,6 @@ tags: ["R Markdown", "plot", "regression"]
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(collapse = TRUE)
 library(dplyr)
 library(opendatatoronto)
