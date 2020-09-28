@@ -1,13 +1,76 @@
----
-title: "The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level"
-author: "STA304 Student"
-date: "9/27/2020"
-output:
-  html_document: default
-  pdf_document: default
-abstract: In this report, we preliminarily investigate whether subsidizing low-income childcare for age 0-5 children can meaningfully improve long-term educational outcomes (as measured by grade 9 graduation rates).
----
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.75.1" />
 
+
+<title>The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level - Anonymous Fried Chicken&#39;s Website</title>
+<meta property="og:title" content="The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level - Anonymous Fried Chicken&#39;s Website">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">8 min read</span>
+    
+
+    <h1 class="article-title">The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level</h1>
+
+    
+    <span class="article-date">0001-01-01</span>
+    
+
+    <div class="article-content">
+      
 
 
 <div id="introduction" class="section level1">
@@ -45,7 +108,7 @@ names(edu_data)</code></pre>
   ggplot(aes(x = RawData_Ref2008.Catholic.School.Graduation)) +
     geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/edu_data_2-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/edu_data_2-1.png" width="672" /></p>
 <p>Generally we see that nearly all districts boast a graduation rate of over 60%, with a majority of districts keeping a graduation rate of above 75%. There is one particular outlier sample which appears to have a graduation rate of 0, however. This neighborhood is the Forest Hill South neighborhood (#101). This specific labelling may be incorrect, given that - based on the same dataset - 50% of students within the Neighborhood passed the Ontario Secondary School Literary Test and 60% of the Neighborhood’s students applied to a University.</p>
 <p>This is the singular major outlier within a histogram that otherwise appears to be reasonably-distributed, so we proceed to prune this one particular sample from the dataset.</p>
 <pre class="r"><code>edu_data = edu_data[-c(101),]
@@ -53,7 +116,7 @@ edu_data %&gt;%
   ggplot(aes(x = RawData_Ref2008.Catholic.School.Graduation)) +
     geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/edu_data_3-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/edu_data_3-1.png" width="672" /></p>
 <p>The exclusion of the outlier sample results in a much cleaner histogram.</p>
 </div>
 <div id="toronto-economic-dataset" class="section level2">
@@ -96,7 +159,7 @@ econ_data %&gt;%
   ggplot(aes(x = RawData.Ref.Period.2008.Economics)) +
     geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/edu_econ_2-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/edu_econ_2-1.png" width="672" /></p>
 <p>However, it is worth noting that the 140th neighborhood (Guildwood) and 79th neighborhood (University) also appear to have their data misentered - the remaining data is on a scale from 0 to 1, but this entry appears to be from 0 to 100, so these outlier samples are pruned for convenience as they would constitute major outliers.</p>
 <pre class="r"><code>econ_data = econ_data[-c(79, 139),]
 edu_data = edu_data[-c(79, 139),]
@@ -105,7 +168,7 @@ econ_data %&gt;%
   ggplot(aes(x = RawData.Ref.Period.2008.Economics)) +
     geom_histogram()</code></pre>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/edu_econ_3-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/edu_econ_3-1.png" width="672" /></p>
 <p>Once again, we arrive at a significantly cleaner histogram after pruning.</p>
 </div>
 <div id="cumulative-analysis" class="section level2">
@@ -147,7 +210,7 @@ reg &lt;- lm(RawData_Ref2008.Catholic.School.Graduation~merged$RawData.Ref.Perio
 with(merged, merged_plot)</code></pre>
 <pre><code>## NULL</code></pre>
 <pre class="r"><code>abline(reg)</code></pre>
-<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/regression-1.png" width="672" /></p>
+<p><img src="../../../../post/2015-07-23-r-rmarkdown_files/figure-html/regression-1.png" width="672" /></p>
 <pre class="r"><code>summary(reg)</code></pre>
 <pre><code>## 
 ## Call:
@@ -195,3 +258,47 @@ URL <a href="https://open.toronto.ca/dataset/wellbeing-toronto-education/" class
 <p>City of Toronto (2014). Education.
 URL <a href="https://www.toronto.ca/business-economy/industry-sector-support/education/" class="uri">https://www.toronto.ca/business-economy/industry-sector-support/education/</a>.</p>
 </div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
