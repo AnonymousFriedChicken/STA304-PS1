@@ -5,7 +5,18 @@
     <link>/</link>
     <description>Recent content on Anonymous Fried Chicken&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level</title>
+      <link>/2020/09/27/the-relationship-between-low-income-childcare-funding-and-educational-outcomes-at-a-neighborhood-level/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/09/27/the-relationship-between-low-income-childcare-funding-and-educational-outcomes-at-a-neighborhood-level/</guid>
+      <description>Abstract In this report, we investigate whether subsidizing low-income childcare for age 0-5 children can meaningfully improve long-term educational outcomes (as measured by grade 9 graduation rates) as measured at a neighborhood-level.
+ Introduction A question involving assistive funding for early-aged children is whether subsidized child-care can improve long-term educational outcomes. If such a relationship can be found, then educational decision makers may wish to further fund early childcare. If such a relationship doesn’t exist, then funding which is purely for educational purposes may be better directed towards other facilities and services.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>/about/</link>
@@ -13,16 +24,6 @@
       
       <guid>/about/</guid>
       <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
-    </item>
-    
-    <item>
-      <title>The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level</title>
-      <link>/1/01/01/the-relationship-between-low-income-childcare-funding-and-educational-outcomes-at-a-neighborhood-level/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/the-relationship-between-low-income-childcare-funding-and-educational-outcomes-at-a-neighborhood-level/</guid>
-      <description>Abstract In this report, we investigate whether subsidizing low-income childcare for age 0-5 children can meaningfully improve long-term educational outcomes (as measured by grade 9 graduation rates) as measured at a neighborhood-level.
- Introduction A question involving assistive funding for early-aged children is whether subsidized child-care can improve long-term educational outcomes. If such a relationship can be found, then educational decision makers may wish to further fund early childcare. If such a relationship doesn’t exist, then funding which is purely for educational purposes may be better directed towards other facilities and services.</description>
     </item>
     
   </channel>
