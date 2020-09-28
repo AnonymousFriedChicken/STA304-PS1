@@ -5,17 +5,15 @@
     <link>/categories/r/</link>
     <description>Recent content in R on Anonymous Fried Chicken&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello R Markdown</title>
-      <link>/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level</title>
+      <link>/1/01/01/the-relationship-between-low-income-childcare-funding-and-educational-outcomes-at-a-neighborhood-level/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/2015/07/23/hello-r-markdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/1/01/01/the-relationship-between-low-income-childcare-funding-and-educational-outcomes-at-a-neighborhood-level/</guid>
+      <description>Abstract In this report, we investigate whether subsidizing low-income childcare for age 0-5 children can meaningfully improve long-term educational outcomes (as measured by grade 9 graduation rates) as measured at a neighborhood-level.
+ Introduction A question involving assistive funding for early-aged children is whether subsidized child-care can improve long-term educational outcomes. If such a relationship can be found, then educational decision makers may wish to further fund early childcare. If such a relationship doesn’t exist, then funding which is purely for educational purposes may be better directed towards other facilities and services.</description>
     </item>
     
   </channel>
