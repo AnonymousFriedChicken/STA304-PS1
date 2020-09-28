@@ -1,7 +1,7 @@
 ---
 title: "The Relationship between Low-Income Childcare Funding and Educational Outcomes at a Neighborhood Level"
 author: "STA304 Student Who May Like Pineapple Pizza"
-date: "2020/09/28"
+date: "2020-09-27"
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
